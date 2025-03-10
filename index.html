@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Віртуальна Візитка | Денис</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(120deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease-in-out;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-style: italic;
+            opacity: 0.8;
+        }
+
+        .info {
+            font-size: 18px;
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+
+        .skills {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .contact {
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 20px;
+            background: white;
+            color: #1e3c72;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #ddd;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Привіт, я Денис!</h1>
+        <p class="subtitle">Студент, спортсмен, майбутній розробник</p>
+        
+        <p class="info">Мені 20 років, навчаюсь у ЧНУ. Обожнюю спорт, програмування та нові виклики.</p>
+        <p class="info">Мрію стати топовим розробником і працювати над крутим софтом.</p>
+        
+        <p class="skills">🔹 HTML, CSS, JavaScript</p>
+        <p class="skills">🔹 Вивчаю React та Frontend</p>
+        <p class="skills">🔹 Цікавлюсь дизайном та UX/UI</p>
+        
+        <div class="contact">
+            <a href="https://github.com/legotekh" class="button">GitHub</a>
+        </div>
+    </div>
+</body>
+</html>
